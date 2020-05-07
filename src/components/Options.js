@@ -4,6 +4,7 @@ import Option from "./Option";
 const Options = (props) => (
     <React.Fragment>
         <button
+            className="button button--link"
             onClick={props.handleRemoveOptions}
             disabled={!props.hasOptions}
         >

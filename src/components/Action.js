@@ -2,7 +2,7 @@ import React from "react";
 
 const Action = (props) => (
     <React.Fragment>
-        <button
+        <button className="big-button"
             onClick={props.handleChooseOption}
             disabled={!props.hasOptions}
         >

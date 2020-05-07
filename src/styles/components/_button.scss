@@ -1,0 +1,38 @@
+// BIG BUTTON
+
+.big-button {
+    width: 100%;
+    background-color: $blush;
+    border: none;
+    border-radius: 10rem;
+    border-bottom: 0.7rem solid darken($blush, 15%);
+    border-right: 0.5rem solid darken($blush, 10%);
+    font-size: $l-size;
+    font-weight: bold;
+    color: white;
+    margin-bottom: $xl-size;
+    padding: 2.4rem;
+}
+
+.big-button:disabled {
+    opacity: 0.5;
+}
+
+// REG BUTTONS
+
+.button {
+    background: $blush;
+    border: none;
+    border-bottom: 0.3rem solid darken($blush, 10%);
+    border-right: 0.2rem solid darken($blush, 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+.button--link {
+    border:none;
+    background: none;
+    color: $off-white;
+    padding: 0;
+}
