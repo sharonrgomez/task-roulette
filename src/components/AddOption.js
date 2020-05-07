@@ -21,7 +21,7 @@ export default class AddOption extends React.Component {
         return (
             <div>
                 {this.state.error && <p>{this.state.error}</p>}
-                <form onSubmit={this.handleAddOption}>
+                <form onSubmit={this.handleAddOption} autoComplete="off" >
                     <input type="text" name="option" placeholder="Add a new option" />
                     <button
                         className="button"

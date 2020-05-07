@@ -3,23 +3,25 @@ import Option from "./Option";
 
 const Options = (props) => (
     <React.Fragment>
-        <button
-            className="button button--link"
-            onClick={props.handleRemoveOptions}
-            disabled={!props.hasOptions}
-        >
-            Remove All
+        <div className="widget-header">
+            <h3 className="widget-header__title">Your Options</h3>
+            <button
+                className="button button--link"
+                onClick={props.handleRemoveOptions}
+                disabled={!props.hasOptions}
+            >
+                Remove All
             </button>
-        {props.options.length === 0 && <p>Please add some items to your list to get started!</p>}
-        <ul>
-            {props.options.map((option) => (
-                <Option
-                    key={option}
-                    optionText={option}
-                    handleRemoveOneOption={props.handleRemoveOneOption}
-                />
-            ))}
-        </ul>
+        </div>
+        {props.options.length === 0 && <p className="widget__message">Please add some options to get started!</p>}
+        {props.options.map((option, index) => (
+            <Option
+                key={option}
+                optionText={option}
+                count={index + 1}
+                handleRemoveOneOption={props.handleRemoveOneOption}
+            />
+        ))}
     </React.Fragment>
 );
 
