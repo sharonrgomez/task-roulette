@@ -6,6 +6,7 @@ const OptionModal = (props) => (      // can use implicit return, don't need to 
         isOpen={!!props.selectedOption}         // !! converts value to boolean
         contentLabel="Selected Option"
         onRequestClose={props.handleClearSelectedOption}
+        appElement={app}
     >
         <h1>Selected Option</h1>
         {props.selectedOption && <p>{props.selectedOption}</p>}
