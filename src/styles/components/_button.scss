@@ -10,7 +10,7 @@
     font-size: $l-size;
     font-weight: bold;
     color: white;
-    margin-bottom: $xl-size;
+    margin-bottom: $m-size;
     padding: 2.4rem;
 }
 
@@ -18,10 +18,17 @@
     opacity: 0.5;
 }
 
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
+
 // REG BUTTONS
 
 .button {
     background: $blush;
+    border-radius: 2rem;
     border: none;
     border-bottom: 0.3rem solid darken($blush, 10%);
     border-right: 0.2rem solid darken($blush, 10%);
@@ -31,7 +38,7 @@
 }
 
 .button--link {
-    border:none;
+    border: none;
     background: none;
     color: $off-white;
     padding: 0;
