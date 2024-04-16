@@ -1,8 +1,9 @@
 // WIDGET BODY
 
 .widget {
-    background: $light-blue;
-    margin-bottom: $xl-size;
+    background: $light;
+    margin-bottom: $l-size;
+    border-radius: 10px;
 }
 
 .widget__message {
@@ -10,17 +11,18 @@
     text-align: center;
     padding: $l-size;
     margin: 0;
-    border-bottom: 1px solid lighten($light-blue, 10%);
+    border-bottom: 1px solid lighten($light, 10%);
 }
 
 // WIDGET HEADER
 
 .widget-header {
-    background: $blue;
+    background: $medium;
     color: $off-white;
     display: flex;
     justify-content: space-between;
     padding: $m-size;
+    border-radius: 10px 10px 0 0;
 }
 
 .widget-header__title {

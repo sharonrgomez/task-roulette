@@ -10,12 +10,12 @@ const OptionModal = (props) => (      // can use implicit return, don't need to 
         }}
         className="modal"
         isOpen={!!props.selectedOption}         // !! converts value to boolean
-        contentLabel="Selected Option"
+        contentLabel="You should do this task"
         onRequestClose={props.handleClearSelectedOption}
         appElement={app}
         closeTimeoutMS={175}
     >
-        <h3>Selected Option</h3>
+        <h1 className='modal__header'>You should do this task:</h1>
         {props.selectedOption && <p className="modal__body">{props.selectedOption}</p>}
         <button className="button" onClick={props.handleClearSelectedOption}>Close</button>
     </Modal>

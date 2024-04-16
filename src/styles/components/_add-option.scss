@@ -1,8 +1,9 @@
 .add-option-error {
-    color: $off-white;
+    color: #c38888;
     font-style: italic;
-    padding: 0 $m-size;
-    margin: $m-size 0 0;
+    padding: 0 0 1.6rem 1.6rem;
+    margin: 0;
+    font-size: $s-size;
 }
 
 .add-option {
@@ -13,13 +14,14 @@
 
 .add-option__input {
     flex-grow: 1;
-    background: $dark-blue;
+    background: $dark;
     border: none;
     color: $off-white;
     padding: $s-size;
     margin: 0 0 $s-size 0;
-    border-bottom: 0.3rem solid darken($dark-blue, 10%);
-    border-right: 0.2rem solid darken($dark-blue, 10%);
+    border-bottom: 0.3rem solid darken($dark, 10%);
+    border-right: 0.2rem solid darken($dark, 10%);
+    border-radius: 5px;
 }
 
 @media (min-width: $desktop-breakpoint) {

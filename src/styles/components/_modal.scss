@@ -22,15 +22,20 @@
     max-width: 25rem;
     min-width: 20rem;
     color: white;
-    padding: $l-size;
+    padding: $m-size;
     text-align: center;
-    border-radius: 5rem;
-    background: $light-blue;
+    border-radius: 15px;
+    background: $light;
+}
+
+.modal__header {
+    font-weight: 100;
+    font-size: $m-size;
 }
 
 .modal__body {
-    margin: 0 0 $l-size 0;
-    font-size: 2rem;
+    margin: 0 0 $m-size 0;
+    font-size: 3rem;
     font-weight: 300;
     word-break: break-all;
 }

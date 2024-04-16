@@ -2,16 +2,16 @@
 
 .big-button {
     width: 100%;
-    background: $blush;
+    background: $accent;
     border: none;
-    border-radius: 10rem;
-    border-bottom: 0.7rem solid darken($blush, 15%);
-    border-right: 0.5rem solid darken($blush, 10%);
-    font-size: $l-size;
+    border-radius: 10px;
+    border-bottom: 0.7rem solid darken($accent, 15%);
+    border-right: 0.5rem solid darken($accent, 10%);
+    font-size: $m-size;
     font-weight: bold;
     color: white;
     margin-bottom: $m-size;
-    padding: 2.4rem;
+    padding: 1.5rem;
 }
 
 .big-button:disabled {
@@ -27,11 +27,11 @@
 // REG BUTTONS
 
 .button {
-    background: $blush;
-    border-radius: 2rem;
+    background: $accent;
+    border-radius: 5px;
     border: none;
-    border-bottom: 0.3rem solid darken($blush, 10%);
-    border-right: 0.2rem solid darken($blush, 10%);
+    border-bottom: 0.3rem solid darken($accent, 10%);
+    border-right: 0.2rem solid darken($accent, 10%);
     color: white;
     font-weight: 500;
     padding: $s-size;

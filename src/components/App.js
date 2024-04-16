@@ -39,9 +39,9 @@ export default class TaskRouletteApp extends React.Component {
 
     handleAddOption = (option) => {
         if (!option) {
-            return "Enter a valid value to add item."
+            return "Enter a valid task"
         } else if (this.state.options.indexOf(option) > -1) {
-            return "That option already exists."
+            return "That task already exists"
         }
         this.setState((prevState) => (
             { options: prevState.options.concat(option) })
