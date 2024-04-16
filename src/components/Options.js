@@ -2,7 +2,7 @@ import React from "react";
 import Option from "./Option";
 
 const Options = (props) => (
-    <React.Fragment>
+    <>
         <div className="widget-header">
             <h3 className="widget-header__title">Your Options</h3>
             <button
@@ -22,7 +22,7 @@ const Options = (props) => (
                 handleRemoveOneOption={props.handleRemoveOneOption}
             />
         ))}
-    </React.Fragment>
+    </>
 );
 
 export default Options;

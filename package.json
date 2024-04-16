@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "task-roulette",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "webpack",
     "start": "node server/server.js"
   },
-  "author": "Sharon Levin",
+  "author": "Sharon Gomez",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.8.4",

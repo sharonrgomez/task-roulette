@@ -10,5 +10,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log("indecision app is running");
+    console.log("app is running at http://localhost:3000");
 });

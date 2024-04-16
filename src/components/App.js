@@ -5,7 +5,7 @@ import Action from "./Action";
 import Options from "./Options";
 import OptionModal from "./OptionModal";
 
-export default class IndecisionApp extends React.Component {
+export default class TaskRouletteApp extends React.Component {
     state = {
         options: [],
         selectedOption: false
@@ -56,7 +56,7 @@ export default class IndecisionApp extends React.Component {
                 this.setState(() => ({ options }));
             }
         } catch (e) {
-            // do nothing
+            console.log("Error: ", e)
         }
     }
 
@@ -68,19 +68,15 @@ export default class IndecisionApp extends React.Component {
     }
 
     render() {
-        const title = "Indecision";
-        const subtitle = "Put your life in the hands of a computer.";
+        const title = "Task Roulette";
+        const subtitle = "Not sure where to start on your to-do list? Simply add your tasks below and let Task Roulette decide for you."
 
         return (
-            <React.Fragment> {/* replaces the need to wrap everything in a div */}
+            <> 
                 <Header title={title}
                     subtitle={subtitle}
                 />
                 <div className="container">
-                    <Action
-                        hasOptions={this.state.options.length > 0}
-                        handleChooseOption={this.handleChooseOption}
-                    />
                     <div className="widget">
                         <Options
                             options={this.state.options}
@@ -92,12 +88,16 @@ export default class IndecisionApp extends React.Component {
                             handleAddOption={this.handleAddOption}
                         />
                     </div>
+                    <Action
+                        hasOptions={this.state.options.length > 0}
+                        handleChooseOption={this.handleChooseOption}
+                    />
                 </div>
                 <OptionModal
                     selectedOption={this.state.selectedOption}
                     handleClearSelectedOption={this.handleClearSelectedOption}
                 />
-            </React.Fragment>
+            </>
         );
     }
 }

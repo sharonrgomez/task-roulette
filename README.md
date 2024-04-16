@@ -1,8 +1,8 @@
-# indecision-app
+# task-roulette
 Need help deciding on what to do? Let this app decide for you!
 
 ## View
-[https://myindecision.herokuapp.com/](https://myindecision.herokuapp.com/)
+[https://taskroulette.sharongomez.com/](https://taskroulette.sharongomez.com/)
 
 ## Built With
 * React
