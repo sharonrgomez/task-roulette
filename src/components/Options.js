@@ -4,7 +4,7 @@ import Option from "./Option";
 const Options = (props) => (
     <>
         <div className="widget-header">
-            <h3 className="widget-header__title">Your list</h3>
+            <h3 className="widget-header__title">Your tasks</h3>
             {props.hasOptions && (
                 <button
                     className="button button--link"
